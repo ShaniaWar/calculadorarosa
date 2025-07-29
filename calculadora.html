@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Básica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="titulo">¡Bienvenido a tu calculadora!🧸✨</h2>
+  <br>
+  <div class="calculadora">
+    <input type="text" id="pantalla" value="0" disabled>
+    <div class="botones">
+      <button onclick="num('7')">7</button>
+      <button onclick="num('8')">8</button>
+      <button onclick="num('9')">9</button>
+      <button onclick="oper('*')">×</button>
+      
+      <button onclick="num('4')">4</button>
+      <button onclick="num('5')">5</button>
+      <button onclick="num('6')">6</button>
+      <button onclick="oper('/')">÷</button>
+      
+      <button onclick="num('1')">1</button>
+      <button onclick="num('2')">2</button>
+      <button onclick="num('3')">3</button>
+      <button onclick="oper('+')">+</button>
+
+      <button onclick="num('0')">0</button>
+      <button onclick="num('.')">.</button>
+      <button onclick="oper('-')">-</button>
+      <button onclick="raiz()">√</button>
+
+      <button onclick="potencia()">x²</button>
+      <button onclick="calcular()">=</button>
+      <button onclick="limpiar()" class="limpiar">C</button>
+    </div>
+  </div>
+  <br>
+  <footer>
+    Gracias por usar la calculadora 💕✨
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

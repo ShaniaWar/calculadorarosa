@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+
+  
+  background-image: url('https://i.pinimg.com/736x/d8/b6/ed/d8b6ede572b790b4208a294057d095e1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titulo {
+  color: #db2780;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.calculadora {
+  background-color: rgba(255, 192, 203, 0.8); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(255, 105, 180, 0.6); 
+}
+
+#pantalla {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ff69b4; 
+  border-radius: 5px;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 15px 0;
+  border: none;
+  background-color: #ff69b4; 
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff1493; 
+}
+
+button.limpiar {
+  background-color: #ff1493;
+  grid-column: span 2;
+}
+
+button.limpiar:hover {
+  background-color: #c71585;
+}
+
+button.igual {
+  background-color: #ff69b4;
+  grid-column: span 2;
+}
+
+button.igual:hover {
+  background-color: #c71585;
+}
+
+footer {
+  text-align: center;
+  margin: 25px 0 15px 0;
+  color: #db2780;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
